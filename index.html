@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/Healthy habit.svg" type="image/x-icon">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <title>Calculadora Imc</title>
+</head>
+<body class="caixa">
+    <section class="img" id="img">
+        <img data-aos="fade-up" src="assets/Healthy habit.svg" alt="">
+    </section>
+    <main class="container" id="container">
+
+        <section class="calculator" id="calculator" data-aos="fade-up">
+            <form data-aos="fade-up" class="form" id="form">
+                <h1 class="title" id="title">Calculadora - Imc</h1>
+                <div class="input-box">
+                    <label for="weight">Peso Kg</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number"  id="weight" required>
+                        <span>Kg</span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">Altura em metros</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" step="0.01"  id="height" required>
+                        <span>m</span>
+                    </div>
+                </div>
+                <button class="calculate" id="calculate">Calcular</button>
+            </form>
+
+            <div class="hidden" id="infos">
+                <div class="result" id="result">
+                    <div class="bmi" id="bmi">
+                        <span id="value"></span>
+                        <span>Seu Imc</span>
+                    </div>
+                    <div  id="description">
+                        <span>55</span>
+                    </div>
+                </div>
+
+                <div class="more-info" id="more-info">
+                    <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm">
+                        Mais informações do Imc
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright 2025 - Calculadora Imc</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
