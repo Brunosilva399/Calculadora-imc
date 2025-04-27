@@ -172,66 +172,64 @@ footer{
 
 
 @media screen and (max-width: 375px){
-
     .caixa{
-        display: flex;
-        justify-content: center;
         flex-direction: column;
-        height: 140vh;
-    }
-
-    .img{
-        width: 50%;
-    }
-
-    .title{
-        font-size: 22px;
-    }
-
-    .calculator{
-        padding-top: 10vh;
-        margin-bottom: 18px;
-    }
-
-    .form{
-        justify-content: center;
-        width: 80vw;
-        height: 70vh;
-    }
-
-    .input-field{
-        width: 90%;
-        align-items: center;
-    }
-
-    .calculate{
-        width: 90%;
-    }
-
-}
-
-@media screen and (max-width: 768px ){
-    .caixa{
-        display: flex;
-        flex-direction: column;
-        height: 130vh;
-    }
-
-    .img{
-        width: 60%;
-        padding-top: 7vh;
     }
 
     .calculator{
         width: 90vw;
+        height: 80vh;
+    }
+
+
+    .img{
+        width: 30%;
+        padding-top: 8vh;
     }
 
     .form{
-        width: 100%;
+        width: 50vw;
     }
+
+    .calculator .title{
+        font-size: 20px;
+    }
+
     footer{
         position: static;
     }
 
 }
 
+
+@media screen and (max-width: 768px){
+    .caixa{
+        flex-direction: column;
+    }
+
+    .calculator{
+        width: 90vw;
+        padding-bottom: 9vh;
+    }
+
+    .form{
+        width: 70vw;
+    }
+
+    .title{
+        font-size: 28px;
+    }
+
+    .img{
+        width: 40%;
+        padding-top: 20vh;
+    }
+
+    footer{
+        position: static;
+    }
+
+    .more-info a{
+        font-size: 19px;
+    }
+}
